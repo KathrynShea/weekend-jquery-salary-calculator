@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <script src="./jquery-3.6.1.min.js"></script>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
     <link href="style.css" rel="stylesheet" />
     <title>Salary Calculator</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="enterInfo">
-        <input type="text" id="employeeFirstName" placeholder="First Name"/> 
-        <input type="text" id="employeeLastName" placeholder="Last Name"/> 
-        <input type="number" id="employeeID" placeholder="ID"/> 
-        <input type="text" id="jobTitle" placeholder="Job Title"/> 
-        <input type="number" id="annualSalary" placeholder="Annual Salary"/> 
-        <button id="addEmployee">Add Employee</button>
+      <input type="text" id="employeeFirstName" placeholder="First Name" />
+      <input type="text" id="employeeLastName" placeholder="Last Name" />
+      <input type="number" id="employeeID" placeholder="ID" />
+      <input type="text" id="jobTitle" placeholder="Job Title" />
+      <input type="number" id="annualSalary" placeholder="Annual Salary" />
+      <button id="addEmployee">Add Employee</button>
     </div>
 
     <table class="tableOfEmployees">
-        <thead>
+      <thead>
         <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Employee ID</th>
-            <th>Job Title</th>
-            <th>Annual Salary</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Employee ID</th>
+          <th>Job Title</th>
+          <th>Annual Salary</th>
+          <th>Remove?</th>
         </tr>
-    </thead>
-    <tbody class="employeeRow"></tbody>
-
-
+      </thead>
+      <tbody class="employeeRow"></tbody>
     </table>
-    
-</body>
+    <div class="monthlyCostDiv">
+    <h2>Monthly Cost: <span class="monthlyCostTotal">0</span></h2>
+    </div>
+  </body>
 </html>
+
 
