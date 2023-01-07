@@ -41,6 +41,7 @@ function addEmployee() {
 function appendDOM() {
   //clear table on DOM
   $(".employeeRow").empty();
+  
 
   //using this to track index in for of loop
   let coutingI = 0;
@@ -52,16 +53,16 @@ function appendDOM() {
         <td>${employee.employeeLastName}</td><td>${employee.employeeID}</td><td>${employee.jobTitle}</td>
         <td>${employee.annualSalary}</td><td><button id ="deleteMe">Delete</button></td></tr>`);
     coutingI++;
+   
   }
 }
 
 function updateMonthlyCost() {
   totalAnnualCost = 0;
-  $("#costH2").css({"backgroundColor": "white"});
+  $("#costH2").css({ backgroundColor: "#3A8891" });
 
   //add all employee annual salaries
 
-    
   for (employee of allEmployees) {
     totalAnnualCost += employee.annualSalary;
   }
@@ -70,9 +71,9 @@ function updateMonthlyCost() {
   //learned toFixed() from https://stackoverflow.com/questions/11832914/how-to-round-to-at-most-2-decimal-places-if-necessary
   totalMonthlyCost = (totalAnnualCost / 12).toFixed(2);
 
-  if (totalMonthlyCost > 20000){
-    $("#costH2").css({"backgroundColor": "red"});
- }
+  if (totalMonthlyCost > 20000) {
+    $("#costH2").css({ backgroundColor: "red" });
+  }
 
   //update the total cost on the DOM
   $(".monthlyCostTotal").text(totalMonthlyCost);

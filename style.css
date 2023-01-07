@@ -1,0 +1,41 @@
+/*
+#F2DEBA
+#FFEFD6
+#0E5E6F
+#3A8891 
+*/
+
+body {
+  background-color: #3a8891;
+  width: 80%;
+  min-width: 600px;
+}
+
+.tableOfEmployees {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  width: 60%;
+  float: right;
+}
+
+th {
+  font-size: small;
+}
+
+h2 {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 4px;
+  border: solid;
+  border-radius: 5px;
+  float: right;
+}
+
+ul {
+  display: inline-block;
+}
+q .list-group-item {
+  list-style: none;
+  padding: 2px 4px 2px 4px;
+}
+
