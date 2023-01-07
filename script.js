@@ -6,6 +6,8 @@ $(function(){
  console.log("JS and JQ working")
 
  $("#addEmployee").on("click", addEmployee);
+
+ $(".employeeRow").on("click", "#deleteMe", removeFromArray );
 });
 
 function addEmployee(){
@@ -35,11 +37,15 @@ function appendDOM(){
     //clear table on DOM
     $(".employeeRow").empty();
 
+    //using this to track index in for of loop
+    let coutingI = 0
+
     //loop through global array and add all employees to table on DOM
     for (employee of allEmployees){
-        $(".employeeRow").append(`<tr><td>${employee.employeeFirstName}</td>
+        $(".employeeRow").append(`<tr data-index=${coutingI}><td>${employee.employeeFirstName}</td>
         <td>${employee.employeeLastName}</td><td>${employee.employeeID}</td><td>${employee.jobTitle}</td>
-        <td>${employee.annualSalary}</td><td><button id ="somthing special">Delete</button></td></tr>`);
+        <td>${employee.annualSalary}</td><td><button id ="deleteMe">Delete</button></td></tr>`);
+        coutingI++;
     }
 }
 
@@ -56,7 +62,7 @@ function updateMonthlyCost(){
 
     for (employee of allEmployees){
         totalAnnualCost += employee.annualSalary;
-        
+
     }
 
     //divide total of annual salaries by 12 to get monthly cost
@@ -65,5 +71,17 @@ function updateMonthlyCost(){
 
     //update the total cost on the DOM
     $(".monthlyCostTotal").text(totalMonthlyCost);
+}
+
+
+function removeFromArray(event){
+    let indexInArray = $(event.target).closest("tr").data("index");
+    console.log(indexInArray);
+
+    allEmployees.splice(indexInArray, 1);
+    appendDOM();
+    updateMonthlyCost();
+
+
 }
 
