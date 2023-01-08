@@ -59,7 +59,7 @@ function appendDOM() {
 
 function updateMonthlyCost() {
   totalAnnualCost = 0;
-  $("#costH2").css({ backgroundColor: "#3A8891" });
+  $("#costH2").css({ backgroundColor: "#D6E4E5" });
 
   //add all employee annual salaries
 
@@ -72,7 +72,7 @@ function updateMonthlyCost() {
   totalMonthlyCost = (totalAnnualCost / 12).toFixed(2);
 
   if (totalMonthlyCost > 20000) {
-    $("#costH2").css({ backgroundColor: "red" });
+    $("#costH2").css({ backgroundColor: "#EB6440" });
   }
 
   //update the total cost on the DOM

@@ -1,41 +1,59 @@
-/*
-#F2DEBA
-#FFEFD6
-#0E5E6F
-#3A8891 
-*/
 
 body {
-  background-color: #3a8891;
-  width: 80%;
-  min-width: 600px;
+  background-color: #D6E4E5;
+  width: 80% auto;
+  min-width: 1012px;
+  max-width: 1040px;
+  color: #497174;
+}
+
+.navbar-brand{
+    padding-left:40px;
+    font-size: 30px;
+    margin: 10px 0px 10px 0px;
+
+}
+.nav-item{
+    float:right;
+    padding: 15px;
+    font-weight: 800;
+    border-radius: 5px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    
 }
 
 .tableOfEmployees {
+  margin-top: 1px;
   margin-bottom: 5px;
   border-radius: 5px;
-  width: 60%;
+  border-color: #EFF5F5;
+  width: 75%;
   float: right;
+  border-radius: 5px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+  
+}
+
+tbody thead tr{
+    border-color: #EFF5F5;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 th {
   font-size: small;
-}
-
-h2 {
-  margin-top: 5px;
-  display: inline-block;
-  padding: 4px;
-  border: solid;
-  border-radius: 5px;
-  float: right;
+  border-color: #EFF5F5;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 ul {
   display: inline-block;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-q .list-group-item {
+
+ q.list-group-item {
   list-style: none;
   padding: 2px 4px 2px 4px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 

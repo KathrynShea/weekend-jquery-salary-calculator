@@ -9,19 +9,20 @@
   </head>
   <body>
     <!-- <header class="container">Hello and Welcome</header> -->
-    <heading>
-        <h1>Salary Calculator</h1>
-        <h4>Add Employee</h4>
+    <heading class="navbar">
+        <span class="navbar-brand">Salary Calculator</span>
+        <span class="nav-item h4" id ="costH2">Monthly Cost: $ <span class="monthlyCostTotal">0</span></span>
     </heading>
 
-    <div></div>
+    
     <ul class="enterInfo">
+      <li class="list-group-item">Add Employee: </li>
       <li class="list-group-item"><input type="text" id="employeeFirstName" placeholder="First Name" /></li>
       <li class="list-group-item"><input type="text" id="employeeLastName" placeholder="Last Name" /></li>
       <li class="list-group-item"><input type="number" id="employeeID" placeholder="ID" /></li>
       <li class="list-group-item"><input type="text" id="jobTitle" placeholder="Job Title" /></li>
       <li class="list-group-item"><input type="number" id="annualSalary" placeholder="Annual Salary" /></li>
-      <li class="list-group-item"><button id="addEmployee">Add Employee</button></li>
+      <li class="list-group-item"><button id="addEmployee">Submit</button></li>
     </ul>
 
     <table class="tableOfEmployees table table-condensed table-bordered">
@@ -37,12 +38,8 @@
       </thead>
       <tbody class="employeeRow"></tbody>
     </table>
-    <h2 id ="costH2">Monthly Cost: $<span class="monthlyCostTotal">0</span></h2>
     
 </div>
-        
-
-    <footer></footer>
   </body>
 </html>
 
