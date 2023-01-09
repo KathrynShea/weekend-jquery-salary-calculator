@@ -21,6 +21,7 @@ Struggling to figure out how to add screenshots!
 ## Built With
 HTML
 JavaScript
+JQuery
 CSS
 Bootstrap
 

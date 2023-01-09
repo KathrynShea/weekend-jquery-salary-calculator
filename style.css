@@ -1,59 +1,54 @@
-
 body {
-  background-color: #D6E4E5;
+  background-color: #d6e4e5;
   width: 80% auto;
   min-width: 1012px;
   max-width: 1040px;
   color: #497174;
 }
 
-.navbar-brand{
-    padding-left:40px;
-    font-size: 30px;
-    margin: 10px 0px 10px 0px;
-
+.navbar-brand {
+  padding-left: 40px;
+  font-size: 30px;
+  margin: 10px 0px 10px 0px;
 }
-.nav-item{
-    float:right;
-    padding: 15px;
-    font-weight: 800;
-    border-radius: 5px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    
+
+.nav-item {
+  float: right;
+  padding: 15px;
+  font-weight: 800;
+  border-radius: 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .tableOfEmployees {
   margin-top: 1px;
   margin-bottom: 5px;
   border-radius: 5px;
-  border-color: #EFF5F5;
+  border-color: #eff5f5;
   width: 75%;
   float: right;
   border-radius: 5px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-
-  
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-tbody thead tr{
-    border-color: #EFF5F5;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+tbody thead tr {
+  border-color: #eff5f5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 th {
   font-size: small;
-  border-color: #EFF5F5;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  border-color: #eff5f5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 ul {
   display: inline-block;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
- q.list-group-item {
+q.list-group-item {
   list-style: none;
   padding: 2px 4px 2px 4px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
