@@ -45,35 +45,40 @@ function appendDOM() {
 
   //loop through global array and add all employees to table on DOM
   for (employee of allEmployees) {
+
+    //formatting salary 
+    let outputSalary = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(employee.annualSalary);
+
     $(".employeeRow")
       .append(`<tr data-index=${coutingI}><td>${employee.employeeFirstName}</td>
         <td>${employee.employeeLastName}</td><td>${employee.employeeID}</td><td>${employee.jobTitle}</td>
-        <td>${employee.annualSalary}</td><td><button id ="deleteMe">Delete</button></td></tr>`);
+        <td>${outputSalary}</td><td><button id ="deleteMe">Delete</button></td></tr>`);
     coutingI++;
   }
 }
 
 function updateMonthlyCost() {
   totalAnnualCost = 0;
-  $("#costH2").css({ backgroundColor: "#D6E4E5" });
 
   //add all employee annual salaries
-
   for (employee of allEmployees) {
     totalAnnualCost += employee.annualSalary;
   }
 
   //divide total of annual salaries by 12 to get monthly cost
   //learned toFixed() from https://stackoverflow.com/questions/11832914/how-to-round-to-at-most-2-decimal-places-if-necessary
-  totalMonthlyCost = (totalAnnualCost / 12).toFixed(2);
+  totalMonthlyCost = (totalAnnualCost / 12);
 
   //adding red background if monthly cost is over 20,000
   if (totalMonthlyCost > 20000) {
     $("#costH2").css({ backgroundColor: "#EB6440" });
+  }else{
+    $("#costH2").css({ backgroundColor: "#D6E4E5" });
   }
 
   //update the total cost on the DOM
-  $(".monthlyCostTotal").text(totalMonthlyCost);
+  totalMonthlyCost = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(totalMonthlyCost);
+  $(".monthlyCostTotal").text((totalMonthlyCost));
 }
 
 function removeFromArray(event) {
